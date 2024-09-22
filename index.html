@@ -164,17 +164,16 @@ window.trackDecision = function(decisionLabel) {
     }
 };
 
-$(document).one(":passagedisplay", function () {
-    // Create the button
-    var feedbackButton = $('<button/>', {
-        text: 'Feedback', // Text on the button
-        click: function () {
-            window.open('https://your-feedback-form-link.com', '_blank'); // Link to your feedback form
-        }
-    });
 
-    // Add the button to the UI bar
-    $('#ui-bar').append(feedbackButton);
+$(document).one(":passagerender", function() {
+    var newMenuHtml = '<div id="custom-ui-bar-menu" style="text-align:right; padding: 5px;">' +
+                      '<a href="#Home" onclick="return Engine.play(\'Home\')">Home</a> | ' +
+                      '<a href="#Introduction" onclick="return Engine.play(\'Introduction\')">Introduction</a> | ' +
+                      '<a href="#About" onclick="return Engine.play(\'About\')">About</a>' +
+                      '</div>';
+
+    // Append to #ui-bar which is the top bar in SugarCube
+    $("#ui-bar").append(newMenuHtml);
 });
 </script><tw-tag name="Recap" color="green"></tw-tag><tw-tag name="Emotions-table" color="red"></tw-tag><tw-tag name="List-of-diagnosis" color="orange"></tw-tag><tw-tag name="Personality-traits" color="blue"></tw-tag><tw-tag name="Stressors-list" color="purple"></tw-tag><tw-tag name="A-list-of-things" color="orange"></tw-tag><tw-passagedata pid="1" name="Are you suffering from chronic pain" tags="" position="100,175" size="100,100">Are you suffering from chronic pain?
 
@@ -1338,7 +1337,7 @@ Do the exericise that you love to do, whether it is taking long walks, hikes, ru
 ║└──────────────────────────────────────┘║                                        
 ║                                        ║
 ║                                        ║
-║                  Vk                    ║
+║                  Vl                    ║
 ║                                        ║
 ║                 [[Begin]]                  ║
 ║                                        ║
