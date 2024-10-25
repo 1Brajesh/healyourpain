@@ -104,11 +104,7 @@ var LZString=function(){var r=String.fromCharCode,o="ABCDEFGHIJKLMNOPQRSTUVWXYZa
 		<div id="init-lacking"><p>Browser lacks capabilities required to play.</p><p>Upgrade or switch to another browser.</p></div>
 		<div id="init-loading"><div>Loading&hellip;</div></div>
 	</div>
-	<tw-storydata name="HealYourPa.in" startnode="72" creator="Twine" creator-version="2.9.2" format="SugarCube" format-version="2.37.3" ifid="CE210ACC-0486-4226-8F64-82BB19326DCA" options="" tags="" zoom="0.6" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">body {
-  font-size: 110%   
-}
-
-.red-text {
+	<tw-storydata name="HealYourPa.in" startnode="72" creator="Twine" creator-version="2.9.2" format="SugarCube" format-version="2.37.3" ifid="CE210ACC-0486-4226-8F64-82BB19326DCA" options="" tags="" zoom="0.6" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">.red-text {
   font-size: 24px;
   color: red;
 }
@@ -129,6 +125,91 @@ var LZString=function(){var r=String.fromCharCode,o="ABCDEFGHIJKLMNOPQRSTUVWXYZa
     color: inherit; 
     text-decoration: none; /* Removes underlining */
     cursor: text; /* Makes the cursor appear as normal */
+}
+
+
+/* Style the main menu bar (on the left in SugarCube) */
+#ui-bar {
+    background-image: url('parchment1.jpeg'); /* Replace with your image path */
+    background-size: cover; /* Ensure the image covers the entire menu */
+    background-position: center; /* Center the image */
+    color: black; /* Ensure text is black for readability */
+    border: 1px solid #b0976d; /* Optional: a border to match your theme */
+}
+
+
+/* Universal Styling (Applies to Both Desktop and Mobile) */
+body {
+    background-color: #f7e7ce; /* Fallback background color */
+    background-image: url('parchment2.jpeg'); /* Parchment background image */
+    background-size: cover; /* Ensure the background covers the entire screen */
+    background-position: center;
+    background-attachment: fixed; /* Keeps the background stationary when scrolling */
+    color: black; /* Black text color */
+    font-family: 'Georgia', serif; /* Ancient-style serif font */
+    line-height: 1.6;
+    margin: 0; /* Remove default margins to avoid overflow on small screens */
+    padding: 0;
+}
+
+tw-story {
+    background-color: rgba(255, 255, 255, 0.8); /* Slightly transparent background for readability */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Shadow for depth */
+    max-width: 90%; /* Makes sure the content isn't too wide on smaller screens */
+    margin: 10px auto; /* Centers the content with some spacing */
+}
+
+tw-passage {
+    max-width: 800px; /* Ideal for larger screens */
+    margin: 0 auto; /* Centers the text */
+    padding: 10px; /* Adds spacing inside the passage */
+    font-size: 24px; /* Default font size for readability */
+}
+
+a {
+    color: #7e5e31; /* Dark golden brown for links */
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline; /* Hover effect for links */
+}
+
+/* Mobile-Specific Styling */
+@media (max-width: 600px) {
+    body {
+        font-size: 18px; /* Slightly smaller font size for mobile */
+        line-height: 1.4; /* Adjust line height for smaller screens */
+    }
+    
+    tw-story {
+        padding: 15px;
+        max-width: 100%; /* Allow the story container to take up the full width on small screens */
+        margin: 0 auto;
+        background-color: rgba(255, 255, 255, 0.9); /* Increase opacity for better readability on mobile */
+    }
+
+    tw-passage {
+        font-size: 18px; /* Decrease text size for mobile readability */
+        max-width: 100%; /* Full width for text on small screens */
+    }
+
+    a {
+        font-size: 18px; /* Ensure link text isn't too small on mobile */
+    }
+}
+
+/* Large Desktop Screens */
+@media (min-width: 1200px) {
+    tw-story {
+        max-width: 60%; /* Restrict width on large screens for better readability */
+    }
+
+    tw-passage {
+        font-size: 24px; /* Slightly larger font size for large screens */
+    }
 }
 </style><script role="script" id="twine-user-script" type="text/twine-javascript">// Dynamically load the Google Analytics script
 (function(){
@@ -1329,7 +1410,7 @@ Do the exericise that you love to do, whether it is taking long walks, hikes, ru
 ║└──────────────────────────────────────┘║                                        
 ║                                        ║
 ║                                        ║
-║                  Vd                    ║
+║                  Ve                    ║
 ║                                        ║
 ║                 [[Begin]]                  ║
 ║                                        ║
@@ -1511,7 +1592,11 @@ Whatever method you use will lead to this method
 
 Show the passage number in the ui-bar - I think I got this label to work
 
+Like learning to ride a bycicle you can&#39;t read and be able to do it. - added 10/22/24
 
+Chinese trap analogy
+
+Truman show is like vanilla life - just perfect
 
 </tw-passagedata><tw-passagedata pid="76" name="Begin" tags="" position="250,25" size="100,100">INTRODUCTION
 
@@ -1524,7 +1609,7 @@ It can also be used to save or load your reading position.
 
 On a mobile device, the sidebar might need to be expanded using the arrow on the top left.
 
-Plan to set aside a couple of hours to fully engage in the experiences described in this book.
+Like learning to ride a bicycle, you cannot just read about how to ride, but you must get on the bicicyle several times to be able to learn to ride it. So plan to set aside a couple of hours to fully engage in the experiences described in this book and then time for a daily practice to master the techniques.
 
 [[Feedback]] from you is invaluable, and this book is continually refined based on your insights and updates&lt;span class=&quot;secret-dot&quot;&gt;&lt;a data-passage=&quot;Book Dedication&quot;&gt;.&lt;/a&gt;&lt;/span&gt;
 
