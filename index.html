@@ -121,11 +121,16 @@ var LZString=function(){var r=String.fromCharCode,o="ABCDEFGHIJKLMNOPQRSTUVWXYZa
 }
 
 
+/* For the secret-dot links (periods) */
 .secret-dot a {
-    color: inherit !important; /* Ensures that the color is inherited */
-    text-decoration: none !important; /* Removes underline definitively */
-    cursor: text !important; /* Makes the cursor look like normal text */
+    color: inherit !important; /* Inherit the surrounding text color */
+    text-decoration: none !important; /* Remove underline */
+    background: none !important; /* Remove any background styling */
+    padding: 0 !important; /* Remove padding to prevent the 'button' effect */
+    border: none !important; /* Remove borders */
+    cursor: text !important; /* Make it look like normal text cursor */
 }
+
 
 
 /* Style the main menu bar (on the left in SugarCube) */
@@ -1442,7 +1447,7 @@ Do the exericise that you love to do, whether it is taking long walks, hikes, ru
 ║└──────────────────────────────────────┘║                                        
 ║                                        ║
 ║                                        ║
-║                  Vi                    ║
+║                  Vj                    ║
 ║                                        ║
 ║                 [[Begin]]                 ║
 ║                                        ║
