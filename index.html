@@ -137,15 +137,31 @@ var LZString=function(){var r=String.fromCharCode,o="ABCDEFGHIJKLMNOPQRSTUVWXYZa
     border: 1px solid #b0976d; /* Optional: a border to match your theme */
 }
 
-/* Ensure the menu items have black text */
 #menu a {
-    color: black; /* Set the link color to black */
-    text-decoration: none; /* Optional: remove the underline for a cleaner look */
+    color: black !important; /* Force black text for all menu links */
+    background-color: rgba(255, 255, 255, 0.8); /* Light background for buttons */
+    text-decoration: none; /* No underline */
+    border: 1px solid #7e5e31; /* Optional: border for better button definition */
+    padding: 10px 15px; /* Add padding to buttons */
+    border-radius: 5px; /* Rounded corners */
+    display: block; /* Make buttons full width */
+    text-align: center; /* Center the text */
 }
 
-/* Optional: Keep the hover effect for desktop users */
-#menu a:hover {
-    color: white; /* White text on hover for contrast */
+/* Hover and active state for menu links */
+#menu a:hover, #menu a:active {
+    color: black !important; /* Keep black text on hover and active */
+    background-color: rgba(255, 255, 255, 0.9); /* Slightly darker background on hover */
+    text-decoration: none; /* No underline */
+}
+
+/* Disabled buttons */
+#menu a[aria-disabled="true"] {
+    color: #b0b0b0 !important; /* Light gray text for disabled state */
+    background-color: #f0f0f0; /* Light gray background for disabled */
+    border: 1px solid #d0d0d0; /* Lighter border */
+    cursor: not-allowed; /* Not-allowed cursor for disabled buttons */
+    opacity: 0.7; /* Slight fade effect for disabled buttons */
 }
 
 
@@ -1426,9 +1442,9 @@ Do the exericise that you love to do, whether it is taking long walks, hikes, ru
 ║└──────────────────────────────────────┘║                                        
 ║                                        ║
 ║                                        ║
-║                  Vg                    ║
+║                  Vh                    ║
 ║                                        ║
-║                 [[Begin]]                  ║
+║                 [[Begin]]                 ║
 ║                                        ║
 ║                                        ║
 ╚════════════════════════════════════════╝
